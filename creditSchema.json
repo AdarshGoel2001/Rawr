@@ -1,0 +1,33 @@
+{
+  "credentialSubject": {
+    "description": "Stores the data of the credential",
+    "title": "Credential subject",
+    "properties": {
+      "id": {
+        "description": "Stores the DID of the subject that owns the credential",
+        "title": "Credential subject ID",
+        "format": "uri",
+        "type": "string"
+      },
+      "creditScore": {
+        "description": "CIBIL score",
+        "title": "creditScore",
+        "type": "number"
+      },
+      "age": {
+        "description": "Age of individual",
+        "title": "Age",
+        "type": "number"
+      },
+      "minSal": {
+        "description": "Minimum annual estimated income of a user",
+        "title": "minimumSalary",
+        "type": "number"
+      }
+    },
+    "required": [
+      "creditScore"
+    ],
+    "type": "object"
+  }
+}
