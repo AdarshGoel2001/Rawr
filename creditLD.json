@@ -1,25 +1,31 @@
 {
-    "@context": [
-      {
-        "@version": 1.1,
-        "@protected": true,
-        "id": "@id",
-        "type": "@type",
-        "ProofOfDaoLongevity": {
-          "@id": "https://raw.githubusercontent.com/0xPolygonID/tutorial-examples/main/credential-schema/proof-of-dao-longevity.jsonld#ProofOfDaoLongevity",
-          "@context": {
-            "@version": 1.1,
-            "@protected": true,
-            "id": "@id",
-            "type": "@type",
-            "vocab": "https://github.com/0xPolygonID/tutorial-examples/blob/main/credential-schema/proof-of-dao-longevity-vocab.md#",
-            "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "entryDate": {
-              "@id": "vocab:entryDate",
-              "@type": "xsd:integer"
-            }
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "CreditCheck": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:3925f191-4f04-4b1b-99dd-e47cf827abe2#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "creditScore": {
+            "@id": "polygon-vocab:creditScore",
+            "@type": "xsd:double"
+          },
+          "age": {
+            "@id": "polygon-vocab:age",
+            "@type": "xsd:double"
+          },
+          "minSal": {
+            "@id": "polygon-vocab:minSal",
+            "@type": "xsd:double"
           }
-        }
+        },
+        "@id": "urn:uuid:91d97499-49b7-4de3-b761-57b2cfb4aa28"
       }
-    ]
-  }
+    }
+  ]
+}
